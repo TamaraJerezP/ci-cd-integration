@@ -1,4 +1,4 @@
-Feature: Demo test
+Feature: Test integration edit
 
   Background:
   Given main page is open
