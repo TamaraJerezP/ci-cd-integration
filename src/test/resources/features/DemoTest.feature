@@ -23,10 +23,10 @@ Feature: Test integration edit
       And user click Login button
     Then message about <status> login is displayed
     Examples:
-      | login        | password             | status        |
-      | tomsmith     | SuperSecretPassword! | successful    |
-      | tomsmith     | wrongpass            | unsuccessful  |
-      | unknown      | anypass              | successful    |
+          | login     | password             | status       |
+          | tomsmith  | SuperSecretPassword! | successful   |
+          | tomsmith  | wrongpass            | unsuccessful |
+          | t_pellegrino | password_falso123 | unsuccessful |
 
   @ui
   @allure.label.epic:Login
